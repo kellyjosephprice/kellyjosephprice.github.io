@@ -10,47 +10,50 @@
     <link rel="stylesheet" type="text/css" href="aboutme.css">
 </head>
 <body>
-    <div class="center">
-        <header>
-            <div class="greeting top-right transition hidden">
-                <div class="caption transition hidden">Hello!</div>
+    <div id="wrap">
+        <div class="greeting top-right">
+            <div class="caption logo transition">
+                If I had a logo, this is where I would put it
             </div>
+        </div>
+        <div id="main">
             <h1>Kelly Joseph Price</h1>
-        </header>
-        <img class="me" title="smug mug" src="http://i.imgur.com/Av9uPdt.png"/>
-        <p>
-            <span class="bold" data-img="greeting">I'm a software engineer</span> 
-            living in San Jose, CA.
-            <span class="bold" data-img="zoba">I have a cat, Zoba,</span> 
-            and recently discovered 
-            <span class="bold" data-img="lightbox">bicycle touring.</span>
-            I plan on biking from Eureka back to the Bay later this year. 
-            Hopefully around this time next year, I want to bike across the
-            States.
-        </p>
-        <p>
-            I grew up in the East Bay and have lived in the South Bay for the last
-            ten years. While working as a barista and then coffee roaster, I tried
-            going to various community colleges. Through trial and error, I got
-            into CS classes and was offered an internship. Shortly after, I dropped 
-            out of my classes and started working as an engineer fulltime. 
-        </p>
-        
-        <ul class="bulleted">
-            <li>Learning Ruby on Rails</li>
-            <li>Software Engineer (perl, linux)</li>
-            <li>Engineering Intern</li>
-            <li>Coffee Roaster</li>
-        </ul>
-        <footer>
-            <ul>
-                <li class="contact">925 234-2914</li> 
-                <li class="contact">
+            <p>
+                <span class="bold" data-img="greeting">I'm a software engineer</span> 
+                living in San Jose, CA.
+                <span class="bold" data-img="zoba">I have a cat, Zoba,</span> 
+                and recently discovered 
+                <span class="bold" data-img="lightbox">bicycle touring.</span>
+                I plan on biking from Eureka back to the Bay later this year. 
+                Hopefully around this time next year, I want to bike across the
+                States.
+            </p>
+            <p>
+                I grew up in the East Bay and have lived in the South Bay for the last
+                ten years. While working as a barista and then coffee roaster, I tried
+                going to various community colleges. Through trial and error, I got
+                into CS classes and was offered an internship. Shortly after, I dropped 
+                out of my classes and started working as an engineer fulltime. 
+            </p>
+            
+            <ul class="experience">
+                <li>Learning Ruby on Rails</li>
+                <li>Software Engineer (perl, linux)</li>
+                <li>Engineering Intern</li>
+                <li>Coffee Roaster</li>
+            </ul>
+        </div>
+        <div id="sidebar">
+            <ul class="contact">
+                <li>
                     <a href="mailto:kellyjosephprice@gmail.com">kellyjosephprice@gmail.com</a>
                 </li>
+                <li>925 234-2914</li> 
+                <li><a href="http://github.com/kellyjosephprice">github</a></li>
             </ul>
-        </footer>
-        <div class="zoba bottom-left transition hidden">
+            <img class="me" title="camera shy" src="http://i.imgur.com/YLCrDOl.jpg"/>
+        </div>
+        <div class="zoba bottom-left">
             <div class="caption transition hidden">
                 Cats always look like they're contemplating their existence, 
                 but I know he's just thinking about cat food.
@@ -84,7 +87,7 @@ var drawLightbox = function() {
 var drawCorner = function(img) {
     var caption = $(img).children('.caption');
     
-    $(img).toggleClass('hidden');
+    //$(img).toggleClass('hidden');
     $(caption).toggleClass('hidden');
 };
 

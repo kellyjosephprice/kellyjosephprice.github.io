@@ -1,13 +1,12 @@
 html {
     position: relative;
     height: 100%;
-    color: #022;
 }
 
 body {
     height: 100%;
-    background-color: #eeeceb;
-    color: #222;
+    background-color: #ecf0f1;
+    color: #0d1217;
     font-family: 'Vollkorn', serif;
     font-family: 'Arvo', serif;
     font-family: 'Source Sans Pro', sans-serif;
@@ -18,7 +17,6 @@ h1 {
     padding: 20px;
     font-size: 40px;
     font-weight: bold;
-    height: 60px;
 }
 
 h2 {
@@ -26,27 +24,42 @@ h2 {
     text-align: center;
 }
 
-.center {
+#wrap {
     height: 100%;
-    height: 100vh;
-    max-width: 600px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 20px;
     font-size: 18px;
+    line-height: 24px;
+}
+
+#main {
+    max-width: 600px;
+    float: right;
     border-width: 0 0 0 2px;
     border-style: none none none dotted;
     border-color: #ccc;
 }
 
-.me {
-    max-height: 200px;
-    display: block;
-    margin: 0 auto;
+#sidebar {
+    max-width: 270px;
+    float: left;
+    text-align: right;
 }
 
 p {
-    padding: 20px 0px 20px 0px;
-    line-height: 24px;
+    padding: 20px;
+}
+
+.me  {
+    padding: 20px 0 0 0;
+}
+
+.contact {
+}
+
+.experience {
+    padding: 20px;
 }
 
 .bold {
@@ -54,7 +67,7 @@ p {
 }
 
 .bold:hover {
-    color: #22a;
+    color: #1bbc9b;
 }
 
 a:link {
@@ -64,49 +77,23 @@ a:link {
 }
 
 a:visited {
-    color: #22a;
+    color: #1bbc9b;
     text-decoration: none;
 }
 
 a:hover {
-    color: #22a;
+    color: #1bbc9b;
     text-decoration: none;
 }
 
 a:active {
-    color: #22a;
+    color: #1bbc9b;
     text-decoration: none;
-}
-
-.bulleted {
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-ul {
-    padding: 17px;
-}
-
-li {
-    padding: 3px 0px 3px 0px;
-}
-
-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
 }
 
 img {
     max-width: 100%;
     max-height: 100%;
-    border-radius: 2px;
-}
-
-.contact {
-    display: inline;
 }
 
 .caption {
@@ -129,16 +116,22 @@ img {
     border-bottom-left-radius: inherit;
 }
 
+.logo {
+    position: relative;
+    border-radius: inherit;
+    text-align: center;
+    height: 80px;
+    width: 80px;
+}
+
 .bottom-left {
     background-image: url("http://i.imgur.com/9Q6gCH5.jpg?1");
     background-size: cover;
     background-position: center;
-    position: fixed;
-    left: 40px;
-    bottom: 40px;
+    position: absolute;
+    bottom: 20px;
     height: 200px;
-    width: 300px;
-    border-radius: 2px;
+    width: 270px;
 }
 
 .top-right {
@@ -150,7 +143,7 @@ img {
     top: 40px;
     height: 100px;
     width: 100px;
-    border-radius: 2px;
+    border-radius: 50%;
 }
 
 .transition {
@@ -164,26 +157,25 @@ img {
     opacity: 0;
 }
 
-@media (max-width: 1340px) {
+@media (max-height: 689px) {
     .bottom-left {
-        position: relative;
-        margin: 0 auto;
-        opacity: 1;
-        top: 0;
-        right: 0;
-        bottom: 9;
-        left: 0;
+        display: none;
     }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 929px) {
+    .bottom-left {
+        display: none;
+    }
+}
+
+@media (max-width: 1179px) {
     .top-right {
         position: relative;
         margin: 0 auto;
-        opacity: 1;
         top: 0;
         right: 0;
-        bottom: 9;
+        bottom: 0;
         left: 0;
     }
 }
