@@ -24,6 +24,10 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    padding-left: 40px;
+}
+
 #wrap {
     height: 100%;
     max-width: 900px;
@@ -68,6 +72,7 @@ p {
 
 .bold:hover {
     color: #1bbc9b;
+    cursor: pointer;
 }
 
 a:link {
