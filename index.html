@@ -2,26 +2,28 @@
 <html>
 <head>
     <title>Kelly Joseph Price</title>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="aboutme.css">
 </head>
 <body>
     <div class="center">
         <header>
-            <div class="top-right">
-                <div class="caption">Hello!</div>
+            <div class="greeting top-right transition hidden">
+                <div class="caption transition hidden">Hello!</div>
             </div>
             <h1>Kelly Joseph Price</h1>
         </header>
         <img class="me" title="smug mug" src="http://i.imgur.com/Av9uPdt.png"/>
         <p>
-            <span class="bold greeting">I'm an unemployed software engineer</span> 
+            <span class="bold" data-img="greeting">I'm an unemployed software engineer</span> 
             living in San Jose, CA. Don't worry, I quit to learn new things. 
-            <span class="bold zoba">I have a cat, Zoba,</span> 
+            <span class="bold" data-img="zoba">I have a cat, Zoba,</span> 
             and recently discovered bicycle touring. So far 
-            <span class="bold big-sur">I've only done weekend tours,</span>
+            <span class="bold" data-img="lightbox">I've only done weekend tours,</span>
             but I plan on biking from Eureka back to the Bay later this year. And
             hopefully around this time next year, I want to bike across the
             States.
@@ -31,7 +33,7 @@
             ten years. While working as a barista and then coffee roaster, I tried
             going to various community colleges. Through trial and error, I got
             into CS classes and was offered an internship. Shortly after, I dropped 
-            out and started working as an engineer fulltime. 
+            out of my classes and started working as an engineer fulltime. 
         </p>
         
         <h2>experience</h2>
@@ -41,11 +43,6 @@
             <li>Engineering Intern</li>
             <li>Coffee Roaster</li>
         </ul>
-        <div class="photos">
-            <img src="http://i.imgur.com/nBfMhsv.jpg"/>
-            <img src="http://i.imgur.com/F5ykZgJ.jpg"/>
-            <img src="http://i.imgur.com/XjudyBU.jpg"/>
-        </div>
         <footer>
             <h2>contact</h2>
             <ul>
@@ -55,8 +52,8 @@
                 </li>
             </ul>
         </footer>
-        <div class="bottom-left">
-            <div class="caption">
+        <div class="zoba bottom-left transition hidden">
+            <div class="caption transition hidden">
                 Cats always look like they're contemplating their existence, 
                 but I know he's just thinking about cat food.
             </div>
@@ -66,4 +63,41 @@
 </html>
 
 <script>
+var drawLightbox = function() {
+    $.fancybox.open([
+        { 
+            href : "http://i.imgur.com/nBfMhsv.jpg",
+            title : "Pebble Beach"
+        },
+        {
+            href : "http://i.imgur.com/F5ykZgJ.jpg",
+            title : "Fort Ord Sand Dunes"
+        },
+        {
+            href : "http://i.imgur.com/XjudyBU.jpg",
+            title : "Hurricane Point, Big Sur"
+        }
+    ], {
+        "padding"  : 2,
+        "closeBtn" : false
+    });
+};
+
+var drawCorner = function(img) {
+    var caption = $(img).children('.caption');
+    
+    $(img).toggleClass('hidden');
+    $(caption).toggleClass('hidden');
+};
+
+$('.bold').on('click', function() {
+    var img = $(this).attr('data-img');
+
+    if( img == "lightbox" ) {
+        drawLightbox();
+    } else {
+        drawCorner('.'+img);
+    }
+});
+
 </script>
