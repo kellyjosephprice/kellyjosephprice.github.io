@@ -21,7 +21,6 @@ h1 {
 
 h2 {
     font-size: 30px;
-    text-align: center;
 }
 
 h3 {
@@ -43,6 +42,11 @@ h3 {
     border-width: 0 0 0 2px;
     border-style: none none none dotted;
     border-color: #ccc;
+    padding-left: 20px;
+}
+
+p {
+    padding-top: 20px;
 }
 
 #sidebar {
@@ -51,12 +55,8 @@ h3 {
     text-align: right;
 }
 
-p {
-    padding: 20px;
-}
-
 .me  {
-    padding: 20px 0 0 0;
+    margin: 20px 0 0 0;
 }
 
 .contact {
@@ -97,98 +97,8 @@ a:active {
 }
 
 img {
+    padding-top: 0;
+    border-radius: 10px;
     max-width: 100%;
     max-height: 100%;
-}
-
-.caption {
-    background: black;
-    background:         linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-    background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-    background:    -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-    background:      -o-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-    font-size: 14px;
-    color: white;
-    line-height: 18px;
-    text-align: left;
-    padding: 10px;
-    margin: 0;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-bottom-right-radius: inherit;
-    border-bottom-left-radius: inherit;
-}
-
-.logo {
-    position: relative;
-    border-radius: inherit;
-    text-align: center;
-    height: 80px;
-    width: 80px;
-}
-
-.bottom-left {
-    background-image: url("http://i.imgur.com/9Q6gCH5.jpg?1");
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    bottom: 20px;
-    height: 200px;
-    width: 270px;
-}
-
-.top-right {
-    background-image: url("http://i.imgur.com/4uWYSDn.jpg");
-    background-size: cover;
-    background-position: center;
-    position: fixed;
-    right: 40px;
-    top: 40px;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-}
-
-.transition {
-            transition: opacity .5s, width .5s;
-    -webkit-transition: opacity .5s, width .5s;
-       -moz-transition: height .5s, width .5s;
-         -o-transition: height .5s, width .5s;
-}
-
-.hidden {
-    opacity: 0;
-}
-
-@media (max-height: 689px) {
-    .bottom-left {
-        position: static;
-        top: auto;
-        right: auto;
-        bottom: auto;
-        left: auto;
-    }
-}
-
-@media (max-width: 929px) {
-    .bottom-left {
-        position: static;
-        top: auto;
-        right: auto;
-        bottom: auto;
-        left: auto;
-    }
-}
-
-@media (max-width: 1179px) {
-    .top-right {
-        position: relative;
-        margin: 0 auto;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
 }
