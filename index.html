@@ -1,38 +1,23 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Kelly Joseph Price</title>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="aboutme.css">
-</head>
+---
+layout: default
+---
 
-<body>
-    <div id="wrap">
-        <div id="main">
-            <h1>Kelly Joseph Price</h1>
-            <p>
-                I'm a software engineer looking to get into web development.
-                I grew up in the East Bay and have lived in the South Bay for the last
-                ten years. While working as a barista and then coffee roaster, I tried
-                going to various community colleges. Through trial and error, I got
-                into CS classes and was offered an internship. Shortly after, I dropped 
-                out of my classes and started working as an engineer fulltime. 
-            </p>
-            <br>
-        </div>
-        <div id="sidebar">
-            <ul class="contact">
-                <li>
-                    <a href="mailto:kellyjosephprice@gmail.com">kellyjosephprice@gmail.com</a>
-                </li>
-                <li>925 234-2914</li> 
-                <br>
-                <li><a href="http://github.com/kellyjosephprice">github</a></li>
-                <li><a href="http://kellyjosephprice.tumblr.com">blog</a></li>
-            </ul>
-        </div>
-    </div>
-</body>
-</html>
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
