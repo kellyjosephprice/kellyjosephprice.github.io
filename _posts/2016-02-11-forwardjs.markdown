@@ -14,7 +14,7 @@ I'm not sure how to categorize these, but these thoughts are what framed
 the entire conference for me.
 
 * _Inclusivity instead of diversity._
-  This community is definitely proud of this stance.
+  This community is definitely proud of this stance. That's a good thing.
 
 * _Cyberpunk - life imitating art?_
   Any exaggeration of the cyberpunk aesthetic you can imagine will happen.
