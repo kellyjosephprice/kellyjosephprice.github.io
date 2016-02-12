@@ -13,18 +13,18 @@ date: 2016-02-11T17:55:29-08:00
 I'm not sure how to categorize these, but these thoughts are what framed
 the entire conference for me.
 
-* Inclusivity instead of diversity
+* _Inclusivity instead of diversity._
   This community is definitely proud of this stance.
 
-* Cyberpunk - life imitating art?
+* _Cyberpunk - life imitating art?_
   Any exageration of the cyberpunk aesthetic you can imagine will happen.
 
-* Why do we want JavaScript everywhere?
+* _Why do we want JavaScript everywhere?_
   I was under the impression that this quirky language was so widespread
 simply because there's no alternative. So why do we keep putting in
 spaces where there are alternatives? 
 
-* The JS community struggles to learn from history
+* _The JS community struggles to learn from history._
   Many of the struggles mentioned have happened before. My buddy Andrew
 pointed out that those might be ongoing lessons.
 
@@ -128,7 +128,8 @@ Mostly, the subject kept getting back to where functional programming
 will fit into the web and their experience with fitting it in. In a
 professional setting, the road to change is through small incremental
 steps. But, for personally development, there can be choices. Do you
-instead immerse yourself in something new?
+instead immerse yourself in something new? That can be daunting, but
+there's always communities to help.
 
 #### Other thoughts
 
@@ -150,8 +151,8 @@ MYLES BORINS
 * women
 * minorities
 
-Myles Borin is an active contributer to Node.js and gave a retrospective on a
-recent OSS organizational debacle. I believe I heard a whiff of this on
+Myles Borin is an active contributer to Node.js and gave a retrospective
+on a recent organizational debacle. I believe I heard a whiff of this on
 HN and reddit, but it had a dramatic impact on this guys life.
 
 IIRC he started a Github issue to discuss removing the term 'suicide'
