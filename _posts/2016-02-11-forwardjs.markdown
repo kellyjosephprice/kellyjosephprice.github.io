@@ -90,8 +90,8 @@ and a very 80's style techno-porn.  Each node on the sequencer
 corresponded to a shader that would move in sync with it's corresponding
 sound source.
 
-I kind of regret going to this talk. In hindsight, I probably would have
-traded a few talks to hear more about ES6, ES7, and React.
+In hindsight, I probably would have traded a few talks to hear more
+about ES6, ES7, and React.
 
 ## Algorithmic Art and JavaScript
 COLE WILLSEA
