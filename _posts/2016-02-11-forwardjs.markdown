@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Forwardjs"
+title: "ForwardJS"
 date: 2016-02-11T17:55:29-08:00
 ---
 
