@@ -17,7 +17,7 @@ the entire conference for me.
   This community is definitely proud of this stance.
 
 * _Cyberpunk - life imitating art?_
-  Any exageration of the cyberpunk aesthetic you can imagine will happen.
+  Any exaggeration of the cyberpunk aesthetic you can imagine will happen.
 
 * _Why do we want JavaScript everywhere?_
   I was under the impression that this quirky language was so widespread
