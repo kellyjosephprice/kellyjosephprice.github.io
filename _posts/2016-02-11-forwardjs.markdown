@@ -71,11 +71,11 @@ signals stopped, nobody would notice.
 
 #### Plan for Adoption
 
-1 Get one browser to ship his new helper app extension
-2 Get one security minded business, ie a bank, to adopt the new protocol
+1. Get one browser to ship his new helper app extension
+2. Get one security minded business, ie a bank, to adopt the new protocol
 and browser extension, and in turn force their customers to use it
-3 Other businesses will want the added security benefit
-4 Other Browsers will be forced to begin shipping the new extension
+3. Other businesses will want the added security benefit
+4. Other Browsers will be forced to begin shipping the new extension
 
 He intends to keep the protocol and rendering engine small with the
 hopes of reducing security flaws. As well, he's not bound by a release
@@ -84,11 +84,14 @@ schedule so it can be released when it is ready.
 ## "re.flow",­ an interactive digital work by Jason Marsh
 JASON MARSH
 
-I kind of regret going to this talk. It was a tech demo of Dolby's new
-web audio codec that can process 3 dimensional sound sources. Jason
-March put together a sound sequencer and a very 80's style techno-porn.
-Each node on the sequencer corresponded to a shader that would move in
-sync with it's corresponding sound source.
+It was a tech demo of Dolby's new web audio codec that can process 3
+dimensional sound sources. Jason March put together a sound sequencer
+and a very 80's style techno-porn.  Each node on the sequencer
+corresponded to a shader that would move in sync with it's corresponding
+sound source.
+
+I kind of regret going to this talk. In hindsight, I probably would have
+traded a few talks to hear more about ES6, ES7, and React.
 
 ## Algorithmic Art and JavaScript
 COLE WILLSEA
