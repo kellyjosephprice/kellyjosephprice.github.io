@@ -21,7 +21,7 @@ the entire conference for me.
 
 * _Why do we want JavaScript everywhere?_
   I was under the impression that this quirky language was so widespread
-simply because there's no alternative. So why do we keep putting in
+simply because there's no alternative. So why do we keep putting it in
 spaces where there are alternatives? 
 
 * _The JS community struggles to learn from history._
