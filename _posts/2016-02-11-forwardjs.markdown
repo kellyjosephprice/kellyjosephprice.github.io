@@ -55,10 +55,9 @@ DOUGLAS CROCKFORD
 
 For me, this was the most intriguing talk. It's always joked about how
 broken web technologies are, kluge on top of kluge. Douglas Crockford
-recognizes that there have been attempts to fix them. I believe he was
-referring to technologies like Flash and Silverlight. He then looked to
-a previous technological leap of something widely adopted: analog to
-digital TV.
+recognizes that there have been attempts to fix them (Flash,
+Silverlight, etc). He then looked to a previous technological leap of
+something widely adopted: analog to digital TV.
 
 The main difference between the approaches used had been who the focus
 for adoption was. Web technologies are always marketed to the developer,
