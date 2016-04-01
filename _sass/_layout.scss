@@ -4,10 +4,10 @@
 .site-header {
   min-height: $base-font-size * 4;
   line-height: $base-font-size * 4;
-  border-bottom: 1px solid $grey-color-light;
 
   // Positioning context for the mobile navigation icon
   position: relative;
+  font-family: 'Inconsolata', monospace;
 }
 
 .site-title {
@@ -84,31 +84,6 @@
 }
 
 
-
-/**
- * Site footer
- */
-.site-footer {
-  font-size: $base-font-size;
-  border-top: 1px solid $grey-color-light;
-  padding: $spacing-unit 0;
-}
-
-.footer-heading {
-  margin-bottom: $spacing-unit / 2;
-}
-
-.footer-col-wrapper {
-  color: $grey-color;
-  margin-left: -$spacing-unit / 2;
-  @extend %clearfix;
-}
-
-.footer-col {
-  float: left;
-  margin-bottom: $spacing-unit / 2;
-  padding-left: $spacing-unit / 2;
-}
 
 /**
  * Page content
