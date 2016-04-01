@@ -204,3 +204,7 @@ pre {
         }
     }
 }
+
+.muted {
+  color: lighten($text-color, 60%);
+}
