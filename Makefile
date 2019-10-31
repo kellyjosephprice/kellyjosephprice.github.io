@@ -1,13 +1,13 @@
+IMAGE_NAME = klog
 JEKYLL_RUN_DEFAULTS = docker run --rm -it \
-	--volume="$(PWD):/srv/jekyll" \
-	-p 4000:4000
+	--volume="$(PWD):/srv/jekyll"
 
 image:
-	docker build -t jekyll .
+	docker build -t $(IMAGE_NAME) .
 
 shell: image
-	$(JEKYLL_RUN_DEFAULTS) jekyll bash
+	$(JEKYLL_RUN_DEFAULTS) $(IMAGE_NAME) bash
 
-server: image
-	(sleep 1 && xdg-open http://penguin.termina.linux.test:4000) &
-	$(JEKYLL_RUN_DEFAULTS) jekyll bash -c "jekyll serve --host 0.0.0.0"
+serve: image
+	(sleep 10 && xdg-open http://penguin.termina.linux.test:4000) &
+	$(JEKYLL_RUN_DEFAULTS) -p 4000:4000 $(IMAGE_NAME)
